@@ -85,7 +85,7 @@ def integrate_trajectory(model, args, t_span, y0, same_method, t_eval=None):
 
 
 def hamiltonian_error_grid(model, data_loader, N=50):
-    """ This function computes a 2D meshgrid of the region \Omega_d in phase space and calculates the error between
+    """ This function computes a 2D meshgrid of the region \\Omega_d in phase space and calculates the error between
         the predicted and true Hamiltonians at each point on this grid. It returns the grid and the error arrays which
         allow to easily plot the results as a contour plot.
 
@@ -119,7 +119,7 @@ def hamiltonian_error_grid(model, data_loader, N=50):
 
 
 def hamiltonian_error_sampled(model, data_loader, omega_m, N=2000):
-    """ This function computes the error between the predicted and true Hamiltonians in the region \Omega_d in phase
+    """ This function computes the error between the predicted and true Hamiltonians in the region \\Omega_d in phase
         space by randomly sampling N points in this region. This function returns the full distribution of errors
         which can be used to do a statistical analysis, afterwards.
 
